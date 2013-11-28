@@ -1,0 +1,20 @@
+
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4" ng-repeat="pizza in menu">>
+            <h2>Pizza {{pizza.name}}</h2>
+
+            <p>{{pizza.caption}}</p>
+
+            <p><a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-list-alt"></span>
+                Ingredients</a></p>
+            <!-- TODO recursive binding of ingredients -->
+            <img ng-src="http://lorempizza.com/i/300/240?id={{pizza.id}}"/> <!-- WAS src="http://lorempizza.com/i/300/240" -->
+
+            <h3>{{pizza.price}} euro</h3>
+            <!-- ng-click="order.pizzaCount = order.pizzaCount +1" -->
+            <p><a class="btn btn-primary"  role="button" ng-click="add(pizza)"><span class="glyphicon glyphicon-shopping-cart"></span>
+                Order</a></p>
+        </div>
+
+    </div>
