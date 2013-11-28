@@ -1,7 +1,7 @@
 
 footer {
     background-color: #888888;
-    height: 400px;
+    height: 250px;
     align-content: center;
     position: absolute;
     left: 0;
@@ -20,5 +20,5 @@ html {
 }
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 250px;
 }

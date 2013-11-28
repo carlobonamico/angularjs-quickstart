@@ -1,0 +1,29 @@
+
+<!-- TODO add PIZZA LIST -->
+<div class="container">
+
+    <div ng-controller="OrderCtrl">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Your order
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        You have {{ order.pizzaCount }} in your order for a total of {{order.totalPrice}} euros
+                        <!-- great for debugging -->
+                        <div>
+                            {{order.items}}
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+    <div ng-controller="PizzaMenuCtrl">
+        <h3>There are {{ menu.length }} pizzas in the menu</h3>
+
+
+            <!-- ng-click="order.pizzaCount = order.pizzaCount +1" -->
+            <p><a class="btn btn-primary"  role="button" ng-click="add(menu[0])"><span class="glyphicon glyphicon-shopping-cart"></span>
+                Order</a></p>
