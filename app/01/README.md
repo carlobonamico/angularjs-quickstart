@@ -8,11 +8,16 @@ la stesura della home page di Pizza5
 * initialize ng-app
 
 ##Lab structure
-###base
-Initial project
-###demo
-Completed lab
-###fragments
-Useful html/js blocks
-###work
-Temporary folder
+'''
+base
+  - Initial project
+demo
+  - Completed lab
+fragments
+  - Useful html/js blocks
+work
+  - Temporary folder
+'''
+
+##References
+[References for Lab01](angularjs-quickstart-01.md)
