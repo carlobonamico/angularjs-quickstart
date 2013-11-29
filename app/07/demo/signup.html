@@ -1,0 +1,158 @@
+<!doctype html>
+<html ng-app>
+<head>
+
+    <!-- TODO add Bootstrap core CSS -->
+    <link href="../../lib/bootstrap-3.0.2/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="pizza5.css">
+    <script src="--https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js" defer></script>
+    <script src="../../lib/angular-1.2.1/angular.min.js" defer></script>
+    <script src="../fragments/pizza5.js" defer></script>
+    <title>Pizza5 - the only thing better than HTML5 </title>
+</head>
+<body>
+
+<!-- TODO add Navbar here -->
+<!-- NAVBAR -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Pizza5</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</div>
+
+<!-- TODO add FORM HERE -->
+<div class="container">
+    <!-- ADD FORM and put ng-model -->
+    <h2>Join Pizza5!</h2>
+
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="inputFirstName" class="col-sm-2 control-label">First Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" ng-model="firstName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputLastName" class="col-sm-2 control-label">Last Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" ng-model="lastName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" ng-model="email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" class="col-sm-2 control-label">Address</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Address" ng-model="address">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputTown" class="col-sm-2 control-label">Town</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputTown" placeholder="Town" ng-model="town">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" ng-model="password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="terms"> Accept Terms and Conditions
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-success" ng-click="message = 'Thank you '+firstName+ '!'">Sign up</button> <span>{{message}}</span>
+            </div>
+        </div>
+
+    </form>
+
+
+    <h3>Check your data</h3>
+    <ul>
+        <li>First Name: {{firstName}} </li>
+        <li>Last Name: {{lastName}}</li>
+        <li>Email: {{email}}</li>
+        <li>Address: {{address}}</li>
+        <li>Town: {{town}}</li>
+        <li>Accept Terms and Conditions: {{terms}}</li>
+
+    </ul>
+</div>
+
+<section>
+    <div class="container">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Lab 02: Data Binding
+                </h3>
+            </div>
+            <div class="panel-body">
+                <p>Data binding (bidirezionale, applicato a valori e attributi dei tag)
+                </p>
+
+                <p>
+                    Esercizio: inserimento dei dati dell' utente che fa un ordine
+                </p>
+
+                <div class="highlight">
+                    <pre>
+3+2 = {{3 + 2}}
+                    </pre>
+                </div>
+                <div class="notes">
+                    <h4>Note</h4>
+
+                    <p>Put your notes here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 centered">
+                <div>AngularJS QuickStart - Codemotion Milan 2013</div>
+                <img src="../../codemotion.jpg" width="300px" height="auto"/>
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
