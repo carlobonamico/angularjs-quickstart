@@ -1,0 +1,24 @@
+
+footer {
+    background-color: #888888;
+    height: 250px;
+    align-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.centered {
+    float: none;
+    margin: 0 auto;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
