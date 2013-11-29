@@ -1,0 +1,29 @@
+[
+    {
+        "id" : 0,
+        "name": "Margherita",
+        "price": 5,
+        "ingredients" : ["Flour","Salt","Cheese","Tomato"]
+    },
+    {
+        "id" : 1,
+        "name": "Napoli",
+        "price": 6,
+        "ingredients" : ["Flour","Salt","Cheese","Tomato", "Anchovies"]
+    },
+
+    {
+        "id" : 2,
+        "name": "Four Seasons",
+        "price": 7,
+        "ingredients" : ["Flour","Salt","Cheese","Tomato","Mushrooms","Olives"]
+    }
+    ,
+
+    {
+        "id" : 3,
+        "name": "Wurstel",
+        "price": 8,
+        "ingredients" : ["Flour","Salt","Cheese","Tomato","Wurstel"]
+    }
+]
