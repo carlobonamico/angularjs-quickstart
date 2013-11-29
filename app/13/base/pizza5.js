@@ -6,7 +6,15 @@
 var pizza5App = angular.module('pizza5App', ['menu','orders', 'ngRoute']);
 
 
-
+pizza5App.directive('promo', function(){
+    return {
+        restrict: 'E',
+        scope:{
+            name: '@'
+        },
+        templateUrl: 'directives/promo.html'
+    }
+})
 
 pizza5App.config(
     function($routeProvider, $locationProvider) {
