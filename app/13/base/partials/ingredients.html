@@ -1,0 +1,15 @@
+<div ng-controller="PizzaMenuCtrl">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>There are {{ ingredients.length }} ingredients in the pizza</h3>
+        </div>
+
+        <!-- TODO add search form -->
+        <form class="">
+            <div class="input-group col-md-4" ng-repeat="ingredient in ingredients">
+                <label for="q">Ingredient:</label><input type="text" class="form-control" name="q" id="q"
+                                                         ng-model="ingredient">
+            </div>
+        </form>
+    </div>
+</div>

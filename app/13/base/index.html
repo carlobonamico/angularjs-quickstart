@@ -1,11 +1,23 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="pizza5App">
 <head>
 
+    <!-- TODO add Bootstrap core CSS -->
     <link href="../../lib/bootstrap-3.0.2/css/bootstrap.css" rel="stylesheet">
 
     <link rel="stylesheet" href="pizza5.css">
     <script src="../../lib/angular-1.2.1/angular.min.js" defer></script>
+    <script src="../../lib/angular-1.2.1/angular-resource.min.js" defer></script>
+    <script src="../../lib/angular-1.2.1/angular-route.min.js" defer></script>
+
+    <script src="menu/js/module.js" defer></script>
+    <script src="menu/js/services.js" defer></script>
+    <script src="menu/js/controllers.js" defer></script>
+
+    <script src="orders/js/module.js" defer></script>
+    <script src="orders/js/services.js" defer></script>
+    <script src="orders/js/controllers.js" defer></script>
+
     <script src="pizza5.js" defer></script>
     <title>Pizza5 - the only thing better than HTML5 </title>
 </head>
@@ -45,9 +57,11 @@
 
         <p>The the only thing better than HTML5</p>
 
-        <p><a class="btn btn-primary btn-lg" role="button" href="signup.html">Sign Up</a></p>
+        <!-- TODO -->
+        <p><a class="btn btn-primary btn-lg" role="button" href="#signup">Sign Up</a></p>
     </div>
 </div>
+
 
 <div class="container">
 
@@ -67,32 +81,7 @@
                     </div>
                 </div>
 
-
-
-    <div ng-controller="PizzaMenuCtrl">
-        <h3>There are {{ menu.length }} pizzas in the menu</h3>
-
-
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4" ng-repeat="pizza in menu">
-            <h2>Pizza {{pizza.name}}</h2>
-
-            <p>{{pizza.caption}}</p>
-
-            <p><a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-list-alt"></span>
-                Ingredients</a></p>
-            <!-- TODO recursive binding of ingredients -->
-            <img ng-src="http://lorempizza.com/i/300/240?id={{pizza.id}}"/> <!-- WAS src="http://lorempizza.com/i/300/240" -->
-
-            <h3>{{pizza.price}} euro</h3>
-            <!-- ng-click="order.pizzaCount = order.pizzaCount +1" -->
-            <p><a class="btn btn-primary"  role="button" ng-click="add(pizza)"><span class="glyphicon glyphicon-shopping-cart"></span>
-                Order</a></p>
-        </div>
-
-    </div>
-    </div> <!-- end of menu controller -->
+        <ng-view />
 
     </div> <!-- end of Order Controller -->
 </div>
@@ -101,19 +90,24 @@
     <div class="container">
         <div class="panel panel-info">
             <div class="panel-heading">
-                <h3 class="panel-title">Lab 07: Controllers
+                <h3 class="panel-title">Lab 13: Integrazione con altre librerie e componenti
+
 
                 </h3>
             </div>
             <div class="panel-body">
-                <p>Stesura dei controller: reazione agli eventi della pagina e alle azioni dell' utente</p>
+                <p> Supporto per il test
+
+                </p>
                 <p>
-                    Esercizio: aggiunta delle pizze ordinate al carrello
+                    Esempio di una semplice direttiva,
+                    Librerie di componenti e moduli aggiuntivi,
+                    AngularUI
                 </p>
 
                 <div class="highlight">
                     <pre>
-3+2 = {{3 + 2}}
+
                     </pre>
                 </div>
                 <div class="notes">
@@ -125,18 +119,7 @@
         </div>
     </div>
 </section>
+<ng-include src="'include/footer.html'"></ng-include>
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 centered">
-                <h4> <img src="../../codemotion.jpg" width="300px" height="auto"/> AngularJS QuickStart - <a href="http://milano.codemotionworld.com/"> Codemotion Milan 2013</a>
-                    - <a href="https://twitter.com/carlobonamico">@carlobonamico</a>
-                </h4>
-            </div>
-        </div>
-
-    </div>
-</footer>
 </body>
 </html>
