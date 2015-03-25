@@ -12,10 +12,7 @@ menuServices.service("MenuService", function PizzaMenuService($resource) {
     var service =
     {
         query: function () {
-            var menu = MenuResource.query(function () { //e non get
-                //user.$save();
-                console.log("Menu loaded");
-            });
+            var menu = MenuResource.query();
             return menu;
         }
     };

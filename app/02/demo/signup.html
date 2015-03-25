@@ -25,6 +25,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Pizza5</a>
+            
+            
         </div>
         <div class="navbar-collapse collapse">
             <form class="navbar-form navbar-right">
@@ -50,19 +52,19 @@
         <div class="form-group">
             <label for="inputFirstName" class="col-sm-2 control-label">First Name</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" ng-model="firstName">
+                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" ng-model="user.firstName">
             </div>
         </div>
         <div class="form-group">
             <label for="inputLastName" class="col-sm-2 control-label">Last Name</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" ng-model="lastName">
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" ng-model="user.lastName">
             </div>
         </div>
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
             <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" ng-model="email">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" ng-model="user.email">
             </div>
         </div>
         <div class="form-group">
@@ -94,18 +96,21 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-success" ng-click="message = 'Thank you '+firstName+ '!'">Sign up</button> <span>{{message}}</span>
+                <button ng-show="terms" type="submit" class="btn btn-success" ng-click="message = 'Thank you '+firstName+ '!'">Sign up</button> <span>{{message}}</span>
             </div>
         </div>
 
     </form>
 
+    <p><a  class="btn btn-primary btn-lg" role="button" href="index.html">Sign Up</a></p>
 
+	{{user}}
+	
     <h3>Check your data</h3>
     <ul>
-        <li>First Name: {{firstName}} </li>
-        <li>Last Name: {{lastName}}</li>
-        <li>Email: {{email}}</li>
+        <li>First Name: {{user.firstName}} </li>
+        <li>Last Name: {{user.lastName}}</li>
+        <li>Email: {{user.email}}</li>
         <li>Address: {{address}}</li>
         <li>Town: {{town}}</li>
         <li>Accept Terms and Conditions: {{terms}}</li>
