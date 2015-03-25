@@ -5,7 +5,7 @@ la stesura della home page di Pizza5
 * integrate with Twitter Bootstrap http://getbootstrap.com
 * mock-up the parts in plain html
 * include angularjs
-* initialize ng-app
+* initialize ng-app="pizza5App"
 
 ##Lab structure
 '''

@@ -1,8 +1,7 @@
 /**
- * 
+ *
  */
-"use strict";
-
+ 
 var orders = angular.module('orders', ['ngResource']);
 
 orders.controller("OrderCtrl", function($scope) {

@@ -1,7 +1,6 @@
 /**
- * 
+ *
  */
-"use strict";
 
 var orders = angular.module('orders', ['ngResource']);
 

@@ -1,8 +1,6 @@
 /**
- * 
+ *
  */
-"use strict";
-
 var pizza5App = angular.module('pizza5App', ['ngResource']);
 
 function PizzaMenuCtrl($scope, $resource) {

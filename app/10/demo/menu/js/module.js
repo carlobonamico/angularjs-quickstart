@@ -1,7 +1,6 @@
 /**
  *
  */
-"use strict";
 
 var menu = angular.module('menu', ['menu.services']);
 

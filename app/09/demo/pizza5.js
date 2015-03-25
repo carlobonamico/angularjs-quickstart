@@ -1,7 +1,6 @@
 /**
- * 
+ *
  */
-"use strict";
 
 var pizza5App = angular.module('pizza5App', ['ngResource']);
 
@@ -30,3 +29,8 @@ function OrderCtrl($scope) {
         $scope.order.totalPrice = $scope.order.totalPrice + pizza.price; //TODO REFACTOR
     }
 }
+
+
+
+angular.module("pizza5App").controller("PizzaMenuCtrl",PizzaMenuCtrl);
+angular.module("pizza5App").controller("OrderCtrl",OrderCtrl);

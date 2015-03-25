@@ -1,5 +1,5 @@
 /**
  * 
  */
-"use strict";
+angular.module("pizza5App",[]);
 

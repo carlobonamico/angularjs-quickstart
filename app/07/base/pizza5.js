@@ -1,7 +1,7 @@
 /**
- * 
+ *
  */
-"use strict";
+angular.module("pizza5App",[]);
 
 function PizzaMenuCtrl($scope) {
     $scope.menu = [
@@ -44,3 +44,7 @@ function OrderCtrl($scope) {
     };
 
 }
+
+
+angular.module("pizza5App").controller("PizzaMenuCtrl",PizzaMenuCtrl);
+angular.module("pizza5App").controller("OrderCtrl",OrderCtrl);

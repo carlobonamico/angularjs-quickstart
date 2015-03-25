@@ -1,7 +1,7 @@
 /**
  * 
  */
-"use strict";
+angular.module("pizza5App",[]);
 
 var pizza5App = angular.module('pizza5App', ['menu','orders', 'ngRoute']);
 
