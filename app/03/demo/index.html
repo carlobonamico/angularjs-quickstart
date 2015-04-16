@@ -56,65 +56,47 @@
 <!-- TODO add PIZZA LIST -->
 <div class="container">
 
-    <div ng-controller="OrderCtrl">
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Your order
-                        </h3>
-                    </div>
-                    <div class="panel-body">
-                        You have {{ order.pizzaCount }} in your order for a total of {{order.totalPrice}} euros
-                        <!-- great for debugging -->
-                        <div>
-                            {{order.items}}
-                        </div>
-                    </div>
-                </div>
-
-
-
     <div ng-controller="PizzaMenuCtrl">
         <h3>There are {{ menu.length }} pizzas in the menu</h3>
 
 
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Pizza {{menu[0].name}}</h2>
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Pizza {{menu[0].name}}</h2>
 
-            <p>The timeless classic.</p>
+                <p>The timeless classic.</p>
 
-            <p><a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-list-alt"></span>
-                Ingredients</a></p>
+                <p><a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-list-alt"></span>
+                    Ingredients</a></p>
 
-            <img src="http://lorempizza.com/i/300/240"/>
+                <img src="http://lorempizza.com/i/300/240"/>
 
-            <h3>5 euro</h3>
-            <!-- ng-click="order.pizzaCount = order.pizzaCount +1" -->
-            <p><a class="btn btn-primary"  role="button" ng-click="add(menu[0])"><span class="glyphicon glyphicon-shopping-cart"></span>
-                Order</a></p>
+                <h3>5 euro</h3>
+                <!-- ng-click="order.pizzaCount = order.pizzaCount +1" -->
+                <p><a class="btn btn-primary"  role="button" ng-click="add(menu[0])"><span class="glyphicon glyphicon-shopping-cart"></span>
+                    Order</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Pizza TODO</h2>
+
+                <p>Caption text</p>
+
+                <p><a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-list-alt"></span>
+                    Ingredients</a></p>
+
+                <img src="http://lorempizza.com/300/240"/>
+
+                <h3>X euro</h3>
+
+                <p><a class="btn btn-primary" href="#" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                    Order </a></p>
+
+            </div>
+
         </div>
-        <div class="col-md-4">
-            <h2>Pizza TODO</h2>
-
-            <p>Caption text</p>
-
-            <p><a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-list-alt"></span>
-                Ingredients</a></p>
-
-            <img src="http://lorempizza.com/300/240"/>
-
-            <h3>X euro</h3>
-
-            <p><a class="btn btn-primary" href="#" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
-                Order </a></p>
-
-        </div>
-
-    </div>
     </div> <!-- end of menu controller -->
 
-    </div> <!-- end of Order Controller -->
 </div>
 
 <section>

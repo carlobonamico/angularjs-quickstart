@@ -1,0 +1,18 @@
+<!-- TODO add PIZZA LIST -->
+<div class="container">
+
+    <div ng-controller="OrderCtrl">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Your order
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        You have {{ order.pizzaCount }} in your order for a total of {{order.totalPrice}} euros
+                        <!-- great for debugging -->
+                        <div>
+                            {{order.items}}
+
+                        </div>
+                    </div>
+                </div>
