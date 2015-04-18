@@ -93,12 +93,13 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-success" ng-click="message = 'Thank you '+firstName+ '!'">Sign up</button> <span>{{message}}</span>
+                <button ng-show="terms" type="submit" class="btn btn-success" ng-click="message = 'Thank you '+ firstName+ '!'">Sign up</button> <span>{{message}}</span>
             </div>
         </div>
 
     </form>
 
+    <p><a  class="btn btn-primary btn-lg" role="button" href="index.html">Sign Up</a></p>
 
     <h3>Check your data</h3>
     <ul>
